@@ -54,7 +54,7 @@ const Portal = () => {
         <div className="shadow-lg w-full min-w-4/5 sm:w-1/2 rounded bg-yellow-200">
           <div className="flex flex-col justify-center p-5">
             <h1 className="text-2xl font-bold mb-7 text-center text-yellow-700">
-              School Portal
+              The School Portal
             </h1>
             <p className="text-center mb-1">Fill in the form below</p>
             <input
