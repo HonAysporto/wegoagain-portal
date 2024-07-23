@@ -12,6 +12,11 @@ const Portal = () => {
 
 
   const register = () => {
+    if (firstName == "" || lastName == "" || email == "" || password== ""  ) {
+      alert("Fill in the credentials")
+    } else {
+
+   
     if (isEditing) {
         const updatedStudent = [...allStudents];
         updatedStudent[editIndex] = {firstName, lastName, email, password}
@@ -29,7 +34,7 @@ const Portal = () => {
     setLastName("");
     setEmail("");
     setPassword("");
-
+  }
   };
 
   const delet = (index) => {
@@ -54,7 +59,7 @@ const Portal = () => {
         <div className="shadow-lg w-full min-w-4/5 sm:w-1/2 rounded bg-yellow-200">
           <div className="flex flex-col justify-center p-5">
             <h1 className="text-2xl font-bold mb-7 text-center text-yellow-700">
-              The School Portal
+              The School portal
             </h1>
             <p className="text-center mb-1">Fill in the form below</p>
             <input
